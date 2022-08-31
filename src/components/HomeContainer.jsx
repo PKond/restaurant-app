@@ -49,14 +49,14 @@ function HomeContainer() {
         </button>
       </div>
 
-      <div className="py-2 flex-1 flex items-center relative">
+      <div className="py-2 flex-1 flex items-center relative overflow-auto">
         <img
           src={HeroBg}
-          className="ml-auto h-420 w-full lg:w-auto lg:h-650 lg:w-880 sm:h-830"
+          className="ml-auto h-420 w-full lg:w-auto lg:h-650 lg:w-880 sm:h-720"
           alt="hero-bg"
         />
 
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center md:px-24 lg:px-32 py-4 gap-4 flex-wrap">
+        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center  sm:px-12 md:px-24 lg:px-32 py-4 gap-4 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div

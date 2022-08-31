@@ -46,12 +46,12 @@ const RowContainer = ({ flag, data, scrollValue }) => {
             <div className="w-full flex items-center justify-between">
               <motion.div
                 className="w-40 h-40 -mt-8 drop-shadow-2xl"
-                whileHover={{ scale: 1.2 }}
+                whileHover={{ scale: 1.3 }}
               >
                 <img
                   src={item?.imageURL}
                   alt=""
-                  className="w-full h-full object-contain"
+                  className="w-[135px] h-[135px] object-contain"
                 />
               </motion.div>
               <motion.div
@@ -80,7 +80,7 @@ const RowContainer = ({ flag, data, scrollValue }) => {
         ))
       ) : (
         <div className="w-full flex flex-col items-center justify-center">
-          <img src={NotFound} className="h-340" />
+          <img src={NotFound} className="h-340" alt=""/>
           <p className="text-xl text-headingColor font-semibold my-2">
             Items Not Available
           </p>
